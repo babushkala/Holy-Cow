@@ -5,20 +5,21 @@ library(ggplot2)
 
 #create an empty dataframe for first time users
 userdata = data.frame()
-userdata <- data.frame(Date=as.Date(character()),
+userdata <- data.frame(Date = as.Date(character()),
                        Action=character(), 
-                       EnergySaved=numeric(), 
-                       stringsAsFactors=FALSE) 
+                       stringsAsFactors = FALSE,
+                       EnergySaved=numeric()) 
 
 #user input
 input_date <- readline("yyyy-mm-dd ") %>% ymd()
-input_action <- readline("YES or NO ")
+input_action <- readline("YES or NO ") %>% as.character()
 
 #What energy?
 energytype <- readline("Electricity, Water, or Trees ")
 
 if (energytype == "Electricity") {
-  unit = "(Electrivity, kilowatt hours)"
+  average = 165
+  unit = "(Electricity, kilowatt hours)"
 } else if (energytype == "Water") {
   average = 3.5
   unit = "(Water, litre)"
@@ -36,11 +37,11 @@ add_inputs <- function(input_date, input_action) {
       userdata$EnergySaved[n] <- ifelse (input_action == "YES", average, 0)
     } else {
       saved <- ifelse (input_action == "YES", average, 0)
-      userdata <- rbind(userdata, c(input_date, input_action, saved))
+      userdata <- rbind(userdata, data.frame(Date = input_date, Action = input_action, EnergySaved = saved))
     }
   } else {
     saved <- ifelse (input_action == "YES", average, 0)
-    userdata <- rbind(userdata, c(input_date, input_action, saved))
+    userdata <- rbind(userdata, data.frame(Date = input_date, Action = input_action, EnergySaved = saved))
   }
   input_date <- NULL
   input_action <- NULL
