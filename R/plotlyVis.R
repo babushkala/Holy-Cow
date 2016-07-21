@@ -91,10 +91,24 @@ meat_dishes$EcoScore <- (meat_dishes$Water + meat_dishes$CO2 + meat_dishes$Land 
 meat_dishes$EcoScore <- round(meat_dishes$EcoScore)
 write.csv(meat_dishes, file = "meat_dishes.csv")
 
+resources_consumed <- resources_consumed[-c(5:6),]
+Turkey <- c("Turkey", 0.199, 0.15, 3.125)
+rbind(resources_consumed, Turkey)
+write.csv(resources_consumed, file = "resources_consumed.csv")
+
 library(plotly)
 set.seed(10)
-eco_score <- meat_dishes
-plot_ly(eco_score, x = `Amount (oz)`, y = EcoScore, text = paste("EcoScore: ", meat_dishes$EcoScore),
+plot_ly(meat_dishes, x = meat_dishes$`Meat Type`, y = meat_dishes$EcoScore, text = paste("Dish: ", meat_dishes$`Food Item`),
+        mode = "markers", color = meat_dishes$`Meat Type`, size = meat_dishes$`Amount (oz)`)
+
+library(plotly)
+set.seed(10)
+plot_ly(meat_dishes, x = `Amount (oz)`, y = EcoScore, text = paste("Dish: ", meat_dishes$`Food Item`),
+        mode = "markers", color = meat_dishes$`Meat Type`, size = meat_dishes$CO2)
+
+library(plotly)
+set.seed(10)
+plot_ly(meat_dishes, x = `Meat Type`, y = EcoScore, text = paste("EcoScore: ", meat_dishes$EcoScore),
         mode = "markers", color = meat_dishes$`Meat Type`, size = meat_dishes$Water)
 
 base_plot <- plot_ly(
