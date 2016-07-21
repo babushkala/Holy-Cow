@@ -12,7 +12,6 @@ library(rvest)
 breakfast <- read_html("http://allrecipes.com/recipes/155/everyday-cooking/vegetarian/breakfast-and-brunch/?internalSource=hub%20nav&referringId=87&referringContentType=recipe%20hub&linkName=hub%20nav%20daughter&clickId=hub%20nav%202")
 breakfast_titles <- breakfast %>% html_nodes("h3") %>% html_text(trim = TRUE)
 breakfast_titles <- breakfast_titles[-c(2, 4)]
-
 # Remove empty ""
 breakfast_titles[breakfast_titles == ""] = NA
 breakfast_titles <- breakfast_titles[!is.na(breakfast_titles)]
