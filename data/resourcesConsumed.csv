@@ -1,1 +1,1 @@
-Meat Type,CO2 (Pounds/Pound),Water (Gallons/Pound),Grain (Pounds/Pounds),Land Use (m^2/pound)Poultry,3.37,468,4.2,50Beef,15,1799,6.6,250Pork,6.75,576,4.2,70Lamb,16,731,3.1,Goat,13,127,2.9,
+Meat Type,CO2,Water,Grain,LandChicken,0.211,32,0.262,3.125Beef,15,115,0.412,15.625Pork,6.75,45,0.262,4.375Lamb,16,78,0.194,14Turkey,13,30,2.9,3.125

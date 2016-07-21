@@ -1,12 +1,34 @@
-# Plot.ly Data Visualizations
+# Prep Script
 
 install.packages("plotly")
 library(plotly)
 
 library(readr)
+water_consumed <- read_csv("waterConsumption.csv")
+View(water_consumed)
+GallonsOz <- (water_consumed$LitersKg / 35.2739619) / 3.7854118
+GallonsOz <- round(GallonsOz)
+water_consumed <- cbind(water_consumed, GallonsOz)
+
+library(plyr)
+water_consumed <- rename(water_consumed, c("Ingredient"="Food"))
+
 resources_consumed <- read_csv("resourcesConsumed.csv")
 View(resources_consumed)
 resources_consumed$EcoScore <- (resources_consumed$Water + resources_consumed$Grain + resources_consumed$Land + resources_consumed$CO2)
+
+# Round decimal values to 3 decimal points
+# CO2
+is.num <- sapply(resources_consumed$CO2, is.numeric)
+resources_consumed$CO2[is.num] <- lapply(resources_consumed$CO2[is.num], round, 3)
+# Grain
+is.num <- sapply(resources_consumed$Grain, is.numeric)
+resources_consumed$Grain[is.num] <- lapply(resources_consumed$Grain[is.num], round, 3)
+# Land
+is.num <- sapply(resources_consumed$Land, is.numeric)
+resources_consumed$Land[is.num] <- lapply(resources_consumed$Land[is.num], round, 4)
+
+class(resources_consumed)
 
 chicken_dishes <- read_csv("chicken_dishes.csv")
 View(chicken_dishes)
@@ -35,7 +57,7 @@ turkey_dishes$Water <- turkey_dishes$`Amount (oz)` * 30
 turkey_dishes$CO2 <- turkey_dishes$`Amount (oz)` * 0.199
 turkey_dishes$Land <- turkey_dishes$`Amount (oz)` * 3.125
 turkey_dishes$Grain <- turkey_dishes$`Amount (oz)` * 0.15
-  
+
 lamb_dishes <- read_csv("lamb_dishes.csv")
 View(lamb_dishes)
 lamb_dishes$Water <- lamb_dishes$`Amount (oz)` * 78
@@ -45,7 +67,7 @@ lamb_dishes$Grain <- lamb_dishes$`Amount (oz)` * 0.194
 
 meat_dishes <- rbind(chicken_dishes, beef_dishes, pork_dishes, turkey_dishes, lamb_dishes)
 View(meat_dishes)
-meat_dishes$EcoScore <- (meat_dishes$Water + meat_dishes$CO2 + meat_dishes$Land + meat_dishes$Grain) / 10
+meat_dishes$EcoScore <- (meat_dishes$Water + meat_dishes$CO2 + meat_dishes$Land + meat_dishes$Grain) / 11
 meat_dishes$EcoScore <- round(meat_dishes$EcoScore)
 write.csv(meat_dishes, file = "meat_dishes.csv")
 
