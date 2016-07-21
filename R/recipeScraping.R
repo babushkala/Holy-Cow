@@ -1,6 +1,4 @@
-#######################
-### RECIPE SCRAPING ###
-#######################
+# RECIPE SCRAPING
 
 #'********************
 #' BREAKFAST RECIPES *
