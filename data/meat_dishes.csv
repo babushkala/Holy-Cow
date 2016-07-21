@@ -1,1 +1,75 @@
-Food Item,Meat Type,Amount (oz)Burger (Beef),Beef,4Steak,Beef,6Roast Beef,Beef,4Beef (1 Serving),Beef,4Hot Dog,Pork,4Pulled Pork,Pork,3Pork Chops,Pork,5Ham,Pork,3Pork (1 Serving),Pork,4Lamb (1 Serving),Lamb,4Chicken Fingers,Chicken,4Salad (Chicken),Chicken,4Chicken Breast,Chicken,4Chicken Wings,Chicken,5Chicken (1 Serving),Chicken,3Turkey Cold Cuts,Turkey,4Turkey (1 Serving),Turkey,4Lasagne (Beef),Beef,Meat Loaf,Beef,Stew (Beef),Beef,Stew (Chicken),Chicken,Pasta Bolognese,Beef,Sandwich (Beef),Beef,Sandwich (Chicken),Chicken,Sandwich (Pork),Pork,Sandwich (Turkey),Turkey,Salad (Steak),Beef,Kebab (Chicken),Chicken,Kebab (Beef),Beef,Kebab (Lamb),Lamb,Burger (Pork),Pork,Burger (Chicken),Chicken,Lasagne (Chicken),Chicken,Stew (Lamb),Lamb,Pasta (Chicken),Chicken,Schnitzel (Beef),Beef,Schnitzel (Chicken),Chicken,Schnitzel (Pork),Pork,Bacon,Pork,Jerkey,Beef,Ribs (Beef),Beef,Ribs (Pork),Pork,Pie (Chicken),Chicken,Pie (Pork),Pork,Pie (Steak),Steak,Pie (Mince),Beef,Pie (Lamb),Lamb,Pizza (Mince),Beef,Pizza (Steak),Steak,Pizza (Chicken),Chicken,Pizza (Ham),Pork,Pizza (Pork),Pork,Pizza (Bacon),Pork,Burrito (Chicken),Chicken,Burrito (Beef),Beef,Stirfry (Beef),,Enchilada (Beef),,Quesadilla (Chicken),,Taco (Chicken),,Nachos (Beef),,Noodles (Chicken),,Chops (Lamb),,Stirfry (Chicken),,Stirfry (Beef),,Enchilada (Chicken),,Quesadilla (Beef),,Taco (Beef),,Samosa (Chicken),,Samosa (Beef),,Samosa (Lamb),,Nachos (Chicken),,Noodles (Beef),,Noodles (Pork),,Stirfry (Pork),,
+"","Food Item","Meat Type","Amount (oz)","Water","CO2","Land","Grain","EcoScore"
+"1","Chicken Fingers","Chicken",4,128,0.844,12.5,1.048,13
+"2","Salad (Chicken)","Chicken",4,128,0.844,12.5,1.048,13
+"3","Chicken Breast","Chicken",4,128,0.844,12.5,1.048,13
+"4","Chicken Wings","Chicken",5,160,1.055,15.625,1.31,16
+"5","Chicken (1 Serving)","Chicken",3,96,0.633,9.375,0.786,10
+"6","Stew (Chicken)","Chicken",2,64,0.422,6.25,0.524,6
+"7","Sandwich (Chicken)","Chicken",5,160,1.055,15.625,1.31,16
+"8","Kebab (Chicken)","Chicken",4,128,0.844,12.5,1.048,13
+"9","Burger (Chicken)","Chicken",4,128,0.844,12.5,1.048,13
+"10","Lasagne (Chicken)","Chicken",3,96,0.633,9.375,0.786,10
+"11","Pasta (Chicken)","Chicken",3,96,0.633,9.375,0.786,10
+"12","Schnitzel (Chicken)","Chicken",6,192,1.266,18.75,1.572,19
+"13","Pie (Chicken)","Chicken",3,96,0.633,9.375,0.786,10
+"14","Pizza (Chicken)","Chicken",3,96,0.633,9.375,0.786,10
+"15","Burrito (Chicken)","Chicken",4,128,0.844,12.5,1.048,13
+"16","Quesadilla (Chicken)","Chicken",5,160,1.055,15.625,1.31,16
+"17","Taco (Chicken)","Chicken",2,64,0.422,6.25,0.524,6
+"18","Noodles (Chicken)","Chicken",4.5,144,0.9495,14.0625,1.179,15
+"19","Stirfry (Chicken)","Chicken",3,96,0.633,9.375,0.786,10
+"20","Enchilada (Chicken)","Chicken",3.5,112,0.7385,10.9375,0.917,11
+"21","Samosa (Chicken)","Chicken",3,96,0.633,9.375,0.786,10
+"22","Nachos (Chicken)","Chicken",2,64,0.422,6.25,0.524,6
+"23","Burger (Beef)","Beef",4,460,3.752,62.5,1.648,48
+"24","Steak","Beef",6,690,5.628,93.75,2.472,72
+"25","Roast Beef","Beef",4,460,3.752,62.5,1.648,48
+"26","Beef (1 Serving)","Beef",4,460,3.752,62.5,1.648,48
+"27","Lasagne (Beef)","Beef",4,460,3.752,62.5,1.648,48
+"28","Meat Loaf","Beef",3,345,2.814,46.875,1.236,36
+"29","Stew (Beef)","Beef",3.2,368,3.0016,50,1.3184,38
+"30","Pasta Bolognese","Beef",2.5,287.5,2.345,39.0625,1.03,30
+"31","Sandwich (Beef)","Beef",4,460,3.752,62.5,1.648,48
+"32","Salad (Steak)","Beef",5,575,4.69,78.125,2.06,60
+"33","Kebab (Beef)","Beef",4.8,552,4.5024,75,1.9776,58
+"34","Schnitzel (Beef)","Beef",7,805,6.566,109.375,2.884,84
+"35","Jerkey","Beef",2,230,1.876,31.25,0.824,24
+"36","Ribs (Beef)","Beef",8,920,7.504,125,3.296,96
+"37","Pie (Steak)","Beef",4,460,3.752,62.5,1.648,48
+"38","Pie (Mince)","Beef",3,345,2.814,46.875,1.236,36
+"39","Pizza (Mince)","Beef",2.5,287.5,2.345,39.0625,1.03,30
+"40","Pizza (Steak)","Beef",1.5,172.5,1.407,23.4375,0.618,18
+"41","Burrito (Beef)","Beef",4,460,3.752,62.5,1.648,48
+"42","Stirfry (Beef)","Beef",4,460,3.752,62.5,1.648,48
+"43","Enchilada (Beef)","Beef",3,345,2.814,46.875,1.236,36
+"44","Stirfry (Beef)","Beef",4,460,3.752,62.5,1.648,48
+"45","Quesadilla (Beef)","Beef",3,345,2.814,46.875,1.236,36
+"46","Taco (Beef)","Beef",2.5,287.5,2.345,39.0625,1.03,30
+"47","Samosa (Beef)","Beef",3,345,2.814,46.875,1.236,36
+"48","Noodles (Beef)","Beef",4,460,3.752,62.5,1.648,48
+"49","Nachos (Beef)","Beef",3.5,402.5,3.283,54.6875,1.442,42
+"50","Hot Dog","Pork",4,180,1.688,17.5,1.048,18
+"51","Pulled Pork","Pork",3,135,1.266,13.125,0.786,14
+"52","Pork Chops","Pork",5,225,2.11,21.875,1.31,23
+"53","Ham","Pork",3,135,1.266,13.125,0.786,14
+"54","Pork (1 Serving)","Pork",4,180,1.688,17.5,1.048,18
+"55","Sandwich (Pork)","Pork",3,135,1.266,13.125,0.786,14
+"56","Burger (Pork)","Pork",4,180,1.688,17.5,1.048,18
+"57","Schnitzel (Pork)","Pork",6,270,2.532,26.25,1.572,27
+"58","Bacon","Pork",1.5,67.5,0.633,6.5625,0.393,7
+"59","Ribs (Pork)","Pork",3,135,1.266,13.125,0.786,14
+"60","Pie (Pork)","Pork",2.8,126,1.1816,12.25,0.7336,13
+"61","Pizza (Ham)","Pork",1.3,58.5,0.5486,5.6875,0.3406,6
+"62","Pizza (Pork)","Pork",4,180,1.688,17.5,1.048,18
+"63","Pizza (Bacon)","Pork",2,90,0.844,8.75,0.524,9
+"64","Noodles (Pork)","Pork",4,180,1.688,17.5,1.048,18
+"65","Stirfry (Pork)","Pork",2.5,112.5,1.055,10.9375,0.655,11
+"66","Turkey Cold Cuts","Turkey",4,120,0.796,12.5,0.6,12
+"67","Turkey (1 Serving)","Turkey",4,120,0.796,12.5,0.6,12
+"68","Sandwich (Turkey)","Turkey",3,90,0.597,9.375,0.45,9
+"69","Lamb (1 Serving)","Lamb",4,312,4,56,0.776,34
+"70","Kebab (Lamb)","Lamb",4.5,351,4.5,63,0.873,38
+"71","Stew (Lamb)","Lamb",2.4,187.2,2.4,33.6,0.4656,20
+"72","Pie (Lamb)","Lamb",2.6,202.8,2.6,36.4,0.5044,22
+"73","Chops (Lamb)","Lamb",4,312,4,56,0.776,34
+"74","Samosa (Lamb)","Lamb",3,234,3,42,0.582,25

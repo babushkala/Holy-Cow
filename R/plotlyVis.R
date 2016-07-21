@@ -87,8 +87,9 @@ lamb_dishes$Grain <- lamb_dishes$`Amount (oz)` * 0.194
 
 meat_dishes <- rbind(chicken_dishes, beef_dishes, pork_dishes, turkey_dishes, lamb_dishes)
 View(meat_dishes)
-meat_dishes$EcoScore <- (meat_dishes$Water + meat_dishes$CO2 + meat_dishes$Land + meat_dishes$Grain) / 8
+meat_dishes$EcoScore <- (meat_dishes$Water + meat_dishes$CO2 + meat_dishes$Land + meat_dishes$Grain) / 11
 meat_dishes$EcoScore <- round(meat_dishes$EcoScore)
+write.csv(meat_dishes, file = "meat_dishes.csv")
 
 library(plotly)
 set.seed(10)
